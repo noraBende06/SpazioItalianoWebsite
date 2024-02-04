@@ -1,0 +1,645 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-width container */
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Krona One Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/KronaOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Regular"),
+    url("../fonts/Thasadith-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Italic"),
+    url("../fonts/Thasadith-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Bold"),
+    url("../fonts/Thasadith-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Bold Italic"),
+    url("../fonts/Thasadith-BoldItalic.woff") format("woff");
+}
+
+/* Navbar */
+
+.navbar {
+  font-family: "Krona One Regular";
+  font-size: 18px;
+  color: #0087c0;
+  margin: 0.5rem 0;
+}
+
+.navbar-brand {
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+.navbar a {
+  color: #0087c0;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  /* font-size: 2rem;
+  margin: auto 1rem;
+  padding: 0 0.1rem; */
+  /* border: 0px !important; */
+  /* border-radius: 50%; */
+  transition: none;
+}
+
+.navbar-close {
+  color: red;
+}
+
+/* .navbar .navbar-toggler-icon {
+  background-image: url(/assets/icons/open_menu.png);
+} */
+
+.navbar .btn-close {
+  outline: none !important;
+}
+
+.modal-dialog {
+  width: 100% !important;
+  max-width: 70%;
+  margin: 0 auto 0 auto !important;
+}
+
+.modal-content {
+  padding: 2rem;
+  margin: 5rem auto;
+  align-items: center;
+}
+
+.modal-content .btn-close {
+  align-items: end !important;
+  font-size: 3rem;
+  border: none !important;
+}
+
+.modal-header {
+  margin-left: 80%;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+/* End of NavBar */
+
+/* Mobile Screen */
+
+@media screen and (max-width: 767px) {
+  /* Contact Us Button on Navbar */
+  .contact-link {
+    /* background-color: #efd780; */
+    padding: 0.4rem 2rem;
+    font-family: "Krona One Regular";
+    font-size: 18px;
+    color: black;
+  }
+  .page-container-contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .carousel-item img {
+    /* width: 80%;
+  height: auto; */
+    width: 100%;
+
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  .big_title {
+    font-size: 27px;
+    color: #3ebae1;
+    margin: 10%;
+    text-align: center;
+    font-family: "Krona One Regular";
+  }
+
+  .branding {
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  /* All paragraphs except the last paragraph (.located) */
+  .p2 {
+    font-size: 15px;
+    color: black;
+    margin: 10%;
+    font-family: "Thasadith Regular";
+  }
+
+  .contact-us-p2 {
+    font-size: 15px;
+    color: black;
+    margin-left: 10% !important;
+    font-family: "Thasadith Regular";
+  }
+
+  .contact-container {
+    font-size: 12px;
+    color: black;
+    margin-left: 10% !important;
+    font-family: "Thasadith Regular";
+    margin-top: 10%;
+    display: flex;
+  }
+
+  .program-container {
+    font-size: 15px;
+    color: black;
+    font-family: "Thasadith Regular";
+    display: flex;
+    margin: 0 40px 0 40px;
+  }
+
+  .program-container span {
+    display: block;
+  }
+
+  .block_span {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  .contacts {
+    padding-left: 2rem;
+  }
+
+  /* Heading 2 */
+  .h2 {
+    font-size: 15px !important;
+    color: black;
+    font-family: "Krona One Regular";
+    padding-top: 3rem;
+    margin-left: 40px;
+  }
+
+  .contact-us-h2 {
+    font-size: 15px !important;
+    color: black;
+    font-family: "Krona One Regular";
+    margin-left: 10%;
+  }
+
+  /* Last Paragraph */
+  .located {
+    font-size: 15px;
+    color: black;
+    margin: 5% 10% 2% 0;
+    font-family: "Thasadith Regular";
+  }
+
+  footer p {
+    margin: 4rem;
+    font-family: "Thasadith Regular";
+    font-size: 12px;
+  }
+
+  /* Contact Us Button on Page */
+  .contact-btn {
+    background-color: #efd780;
+    padding: 0.4rem 2rem;
+    font-family: "Thasadith Regular";
+    font-size: 20px;
+    color: black;
+  }
+  .hamburger-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Who we are Page Images Div */
+  .reading_images {
+    background-color: #cedacc;
+    padding: 2rem 2rem;
+  }
+
+  /* Carousel Styles */
+
+  /* End of Carousel Styles */
+
+  footer p {
+    margin: 4rem 4rem 0.2rem 4rem;
+    font-family: "Thasadith Regular";
+    font-size: 8px;
+  }
+}
+
+/* End of Mobile Styles */
+
+/* iPad Screen */
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  /* Contact Us Button on Navbar */
+  .contact-link {
+    /* background-color: #efd780; */
+    padding: 0.4rem 2rem;
+    font-family: "Krona One Regular";
+    font-size: 18px;
+    color: black;
+  }
+
+  /* Main Title (H1) */
+  .big_title {
+    font-size: 40px;
+    color: #3ebae1;
+    margin: 10%;
+    text-align: center;
+    font-family: "Krona One Regular";
+  }
+
+  .p2 {
+    font-size: 20px;
+    color: black;
+    margin: 10%;
+    font-family: "Thasadith Regular";
+  }
+
+  .contact-container {
+    font-size: 20px;
+    color: black;
+    margin-left: 10% !important;
+    font-family: "Thasadith Regular";
+    margin-top: 10%;
+    display: flex;
+  }
+
+  .program-container {
+    font-size: 20px;
+    color: black;
+    /* margin-left: 10% !important; */
+    font-family: "Thasadith Regular";
+    margin-top: 10%;
+    display: flex;
+    margin: 0 40px 0 85px;
+  }
+
+  .program-container p {
+    padding-left: 0.75rem;
+  }
+
+  .block_span {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  .contacts {
+    padding-left: 2rem;
+  }
+
+  .contact-us-p2 {
+    font-size: 30px;
+    color: black;
+    margin-left: 10% !important;
+    font-family: "Thasadith Regular";
+  }
+
+  .located {
+    font-size: 30px;
+    color: black;
+    margin: 5% 10%;
+    font-family: "Thasadith Regular";
+  }
+
+  .reading_images {
+    margin: 3rem;
+    background-color: #cedacc;
+    padding: 4rem;
+  }
+
+  .h2 {
+    font-size: 30px !important;
+    color: black;
+    font-family: "Krona One Regular";
+    padding-top: 10rem;
+    margin-left: 95px;
+  }
+
+  .contact-us-h2 {
+    font-size: 25px !important;
+    color: black;
+    font-family: "Krona One Regular";
+    margin-left: 10%;
+    /* padding-top: 10rem; */
+  }
+
+  .contact-btn {
+    background-color: #efd780;
+    padding: 0.4rem 2rem;
+    font-family: "Thasadith Regular";
+    font-size: 40px;
+    color: black;
+  }
+  .hamburger-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  footer p {
+    margin: 4rem;
+    font-family: "Thasadith Regular";
+    font-size: 12px;
+  }
+
+  .navbar a {
+    font-family: "Krona One Regular";
+    font-size: 20px;
+    color: #3ebae1 !important;
+    font-weight: 400;
+  }
+  .carousel-item img {
+    /* width: 80%;
+  height: auto; */
+    width: 100%;
+
+    height: 750px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+}
+
+/* End of ipad */
+
+/* Carousel Styles */
+.carousel-images {
+  /* background-color: #cedacc; */
+  overflow: hidden;
+
+  /* margin: 10%; */
+}
+
+#carouselExampleIndicators1,
+#carouselExampleIndicators2,
+#carouselExampleIndicators3,
+#carouselExampleIndicators4 {
+  background-color: #cedacc;
+  max-width: 80%;
+  height: auto;
+  padding: 2rem;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  /* background-color: #CEDACC; */
+  /* height: 50px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-next-icon {
+  color: black;
+  border-radius: 50%;
+  background-color: #cedacc;
+  box-shadow: 0 0 4rem rgba(0, 1, 0, 10);
+  background: url(../icons/angle-right-solid.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  background-size: 1rem;
+  opacity: 100%;
+}
+
+.carousel-control-prev-icon {
+  color: black;
+  border-radius: 50%;
+  background-color: #cedacc;
+  box-shadow: 0 0 4rem rgba(0, 1, 0, 10);
+  background: none;
+  background: url(../icons/angle-left-solid.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  background-size: 1rem;
+  color: white;
+}
+
+.carousel-indicators button {
+  width: 0.8em !important;
+  height: 0.8rem !important;
+  border-radius: 50%;
+  background-color: #cedacc;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+/* End of Carousel Settings */
+
+/* Screens larger than iPad */
+@media (min-width: 1081px) {
+  /* Contact Us Button on Navbar */
+  .contact-link {
+    background-color: #efd780;
+    padding: 0.4rem 2rem;
+    font-family: "Thasadith Regular";
+    font-size: 20px;
+    color: black !important;
+  }
+  .h5 {
+    margin: 0 0 0 150px;
+  }
+  .carousel-item img {
+    /* width: 80%;
+  height: auto; */
+    width: 100%;
+
+    height: 1050px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  /* .contact-link {
+    background-color: #efd780;
+    padding: 0.4rem 2rem;
+    font-family: "Krona One Regular";
+    font-size: 18px;
+    color: black;
+  } */
+
+  .navbar a {
+    font-family: "Thasadith Regular";
+    font-size: 20px;
+    color: black !important;
+    font-weight: 400;
+  }
+
+  .p2 {
+    font-size: 30px;
+    color: black;
+    margin: 10%;
+    font-family: "Thasadith Regular";
+  }
+
+  .contact-us-p2 {
+    font-size: 40px;
+    color: black;
+    margin-left: 10% !important;
+    font-family: "Thasadith Regular";
+  }
+
+  .contact-container {
+    font-size: 30px;
+    color: black;
+    margin-left: 10% !important;
+    font-family: "Thasadith Regular";
+    margin-top: 10%;
+    display: flex;
+  }
+
+  .program-container {
+    font-size: 30px;
+    color: black;
+    /* margin-left: 10% !important; */
+    font-family: "Thasadith Regular";
+    margin-top: 10%;
+    display: flex;
+
+    margin: 0 0px 0 110px;
+  }
+
+  .program-container p {
+    padding-left: 0.75rem;
+  }
+
+  .block_span {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  .contacts {
+    padding-left: 2rem;
+  }
+
+  .located {
+    font-size: 40px;
+    color: black;
+    margin: 5% 10%;
+    font-family: "Thasadith Regular";
+  }
+
+  .big_title {
+    font-size: 60px;
+    color: #3ebae1;
+    margin: 10%;
+    text-align: center;
+    font-family: "Krona One Regular";
+  }
+
+  .reading_images {
+    background-color: #cedacc;
+    padding: 6rem;
+  }
+
+  .h2 {
+    font-size: 40px !important;
+    color: black;
+    font-family: "Krona One Regular";
+    padding-top: 10rem;
+    margin-left: 120px;
+  }
+
+  .contact-us-h2 {
+    font-size: 40px !important;
+    color: rgb(17, 12, 12);
+    font-family: "Krona One Regular";
+    margin-left: 10%;
+  }
+
+  .contact-btn {
+    background-color: #efd780;
+    padding: 0.4rem 2rem;
+    font-family: "Thasadith Regular";
+    font-size: 25px;
+    color: black;
+  }
+
+  footer p {
+    margin: 4rem;
+    font-family: "Thasadith Regular";
+    font-size: 15px;
+  }
+
+  /* Carousel */
+  #carouselExampleIndicators {
+    max-width: 40%;
+    margin: 10% auto;
+  }
+
+  #carouselExampleIndicators {
+    max-width: 40%;
+    margin: 10% auto;
+  }
+}
+
+.contact_button {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.find_us a {
+  text-decoration: none !important;
+}
+
+/* Images in the Reading Images div */
+.reading_images img {
+  width: 100%;
+  height: auto;
+}

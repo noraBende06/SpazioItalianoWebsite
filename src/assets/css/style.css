@@ -1,0 +1,744 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+}
+
+.main-cont {
+  flex: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-width container */
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  overflow: hidden;
+}
+
+/* Contact Us Button on Navbar */
+
+.navbar {
+  font-family: "Krona One Regular";
+  font-size: 18px;
+  color: #0087c0;
+  margin: 0.5rem 0;
+}
+
+.navbar-brand {
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+/* .navbar-brand img {
+  height: 15rem;
+} */
+
+.navbar a {
+  color: #0087c0;
+  font-weight: 600;
+}
+
+.navbar-close {
+  color: red;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url(/assets/icons/open_menu.png);
+}
+
+.navbar .btn-close {
+  background-color: none;
+  background-image: url(/assets/icons/close_menu.png);
+  background-size: 4rem !important;
+}
+
+.modal-dialog {
+  width: 100% !important;
+  max-width: 70%;
+  margin: 0 auto 0 auto;
+}
+
+.modal-content {
+  padding: 2rem !important;
+  margin: 5rem auto !important;
+  align-items: center;
+}
+
+.modal-content .btn-close {
+  align-items: end !important;
+  font-size: 3rem !important;
+  border: none !important;
+}
+
+.modal-header {
+  margin-left: 80% !important;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+/* End of NavBar */
+
+/* Mobile Screen */
+
+@media screen and (max-width: 767px) {
+  /* navbar brand  */
+  .branding {
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Contact Us Button on Navbar */
+  .contact-link {
+    /* background-color: #efd780; */
+    padding: 0.4rem 2rem;
+    font-family: "Krona One Regular";
+    font-size: 18px;
+    color: black;
+  }
+  .location p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: "Thasadith Regular";
+    margin: 10rem auto;
+  }
+  .hero-section {
+    background-image: url("../images/hero_4phone.png");
+    background-size: cover;
+    background-position: center;
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .paragraph2 {
+    font-size: 20px;
+    color: black;
+    text-align: start;
+    padding: 0 1rem;
+    margin-top: 10%;
+    font-family: "Thasadith Regular";
+  }
+  .p2 {
+    font-size: 14px;
+    color: black;
+    margin: 10%;
+    text-align: center;
+    font-family: "Thasadith Regular";
+  }
+  .h3 {
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    color: white;
+    font-family: "Krona One Regular";
+    margin: 1rem 0 !important;
+  }
+
+  .contact {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    background-color: #efd780;
+    color: #000;
+    /* border-radius: 5px; */
+    padding: 0.4rem 2rem;
+    font-family: "Thasadith Regular";
+    font-size: 27px;
+    color: black;
+  }
+
+  .hero {
+    color: white;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 44px;
+    font-family: "Krona One Regular";
+  }
+
+  .slogan {
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Thasadith Regular";
+  }
+
+  .first_paragraph {
+    font-size: 16px;
+    color: #3ebae1;
+    margin: 10%;
+    text-align: center;
+    font-family: "Krona One Regular";
+  }
+  .p1 {
+    font-size: 20px;
+    color: black;
+    margin: 10%;
+    text-align: center;
+    font-family: "Thasadith Regular";
+  }
+
+  .creative,
+  .play {
+    font-size: 16px;
+    color: black;
+    text-align: start;
+    /* padding: 0 1rem; */
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 30px;
+    /* background-color: blue; */
+    font-family: "Thasadith Regular";
+  }
+  .hamburger-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .play {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    /* padding: 5rem 0 0 1rem; */
+    /* margin: 10% 0 0 0 ; */
+    font-family: "Thasadith Regular";
+  }
+  .contact-btn {
+    background-color: #efd780;
+    padding: 0.6rem 1rem;
+    font-family: "Thasadith Regular";
+    font-size: 20px;
+    color: black;
+  }
+  .testimony span {
+    display: block;
+    font-size: 30px;
+    font-weight: 700 !important;
+    margin: 3rem 0 6rem;
+    font-family: "Thasadith Regular" !important;
+  }
+  .italian-immersion {
+    /* margin-top: 40rem; */
+    height: 100%;
+    background: linear-gradient(to bottom, #cedacc 55%, #fff 45%);
+  }
+  .testimony {
+    margin: 3rem auto;
+  }
+}
+
+/* iPad Screen */
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .hero-section {
+    background-image: url("../images/hero_4phone.png");
+    background-size: cover;
+    background-position: 18% 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .location p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: "Thasadith Regular";
+    margin: 10rem auto;
+  }
+  .hamburger-icon {
+    width: 52px;
+    height: 52px;
+  }
+  .p1 {
+    font-size: 40px;
+    color: black;
+    margin: 10%;
+    text-align: center;
+    font-family: "Thasadith Regular";
+  }
+
+  .contact {
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    background-color: #efd780;
+    color: #000;
+    /* border-radius: 5px; */
+    padding: 0.4rem 2rem;
+    font-family: "Thasadith Regular";
+    font-size: 27px;
+    color: black;
+  }
+  .p2 {
+    font-size: 30px;
+    color: black;
+    margin: 10%;
+    text-align: center;
+    font-family: "Thasadith Regular";
+  }
+  .h3 {
+    font-size: 40px !important;
+    font-weight: 400 !important;
+    color: white;
+    font-family: "Krona One Regular";
+    margin: 4rem 0 !important;
+  }
+
+  .hero {
+    color: white;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Krona One Regular";
+  }
+
+  .slogan {
+    color: white;
+    position: absolute;
+    top: 35%;
+    width: 90%;
+    text-align: center;
+    font-size: 45px;
+    font-family: "Thasadith Regular";
+  }
+
+  .first_paragraph {
+    font-size: 45px;
+    color: #3ebae1;
+    margin: 10%;
+    text-align: center;
+    font-family: "Krona One Regular";
+  }
+
+  .creative,
+  .play {
+    font-size: 40px;
+    color: black;
+    text-align: start;
+    /* padding: 0 1rem; */
+
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Thasadith Regular";
+  }
+
+  .play {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    /* padding: 5rem 0 0 1rem; */
+    /* margin: 10% 0 0 0 ; */
+    font-family: "Thasadith Regular";
+  }
+  .paragraph2 {
+    font-size: 40px;
+    color: black;
+    text-align: start;
+    padding: 0 1rem;
+    margin-top: 10%;
+    font-family: "Thasadith Regular";
+  }
+  .italian-immersion {
+    margin-top: 0rem;
+    height: 100%;
+    background: linear-gradient(to bottom, #cedacc 55%, #fff 45%);
+  }
+  .testimony {
+    /* margin: 3rem 5rem; */
+  }
+  .contact-btn {
+    background-color: #efd780;
+    padding: 0.6rem 1rem;
+    font-family: "Thasadith Regular";
+    font-size: 20px;
+    color: black;
+  }
+  .testimony span {
+    display: block;
+    font-size: 50px;
+    font-weight: 700 !important;
+    margin: 3rem 0 6rem;
+    font-family: "Thasadith Regular" !important;
+  }
+}
+
+/* Screens larger than iPad */
+@media screen and (min-width: 1081px) {
+  /* Contact Us Button on Navbar */
+  .testimony span {
+    display: block;
+    font-size: 50px;
+    font-weight: 700 !important;
+    margin: 3rem 0 6rem;
+    font-family: "Thasadith Regular" !important;
+  }
+  .location p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 46px;
+    font-family: "Thasadith Regular";
+    margin: 10rem auto;
+  }
+  .contact-link {
+    background-color: #efd780;
+    padding: 0.4rem 2rem;
+    font-family: "Thasadith Regular";
+    font-size: 20px;
+    color: black !important;
+  }
+  .paragraph2 {
+    font-size: 40px;
+    color: black;
+    text-align: start;
+    padding: 0 1rem;
+    margin-top: 10%;
+    font-family: "Thasadith Regular";
+  }
+  .contact-btn {
+    background-color: #efd780;
+    padding: 0.6rem 1rem;
+    font-family: "Thasadith Regular";
+    font-size: 20px;
+    color: black;
+  }
+  .feedback {
+    font-size: 55px;
+    color: black;
+    margin: 10%;
+    text-align: center;
+    font-family: "Thasadith Regular";
+  }
+
+  .p1 {
+    font-size: 55px;
+    color: black;
+    margin: 10%;
+    text-align: center;
+    font-family: "Thasadith Regular";
+  }
+  .h3 {
+    font-size: 60px !important;
+    font-weight: 400 !important;
+    color: white;
+    font-family: "Krona One Regular";
+    margin: 4rem 0 !important;
+  }
+
+  .p2 {
+    font-size: 40px;
+    color: black;
+    margin: 10%;
+    text-align: center;
+    font-family: "Thasadith Regular";
+  }
+  .navbar a {
+    font-family: "Thasadith Regular";
+    font-size: 20px;
+    color: black !important;
+    font-weight: 400;
+  }
+
+  .hero-section {
+    background-image: url("../images/intro.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .contact {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    background-color: #efd780;
+    color: #000;
+    padding: 0.4rem 2rem;
+    font-family: "Thasadith Regular";
+    font-size: 27px;
+    color: black;
+  }
+
+  .hero {
+    color: white;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Krona One Regular";
+  }
+
+  .slogan {
+    color: white;
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-family: "Thasadith Regular";
+  }
+
+  .first_paragraph {
+    font-size: 60px;
+    color: #3ebae1;
+    margin: 10% 0;
+    text-align: center;
+    font-family: "Krona One Regular";
+  }
+
+  .creative,
+  .play {
+    font-size: 40px;
+    color: black;
+    text-align: start;
+    /* padding: 0 1rem; */
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Thasadith Regular";
+  }
+
+  .play {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    /* padding: 5rem 0 0 1rem; */
+    /* margin: 10% 0 0 0 ; */
+    font-family: "Thasadith Regular";
+  }
+  .italian-immersion {
+    margin-top: 10rem;
+    height: 100%;
+    background: linear-gradient(to bottom, #cedacc 55%, #fff 45%);
+  }
+  .testimony {
+    margin: 3rem 5rem;
+  }
+}
+
+@font-face {
+  font-family: "Krona One Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/KronaOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Regular"),
+    url("../fonts/Thasadith-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Italic"),
+    url("../fonts/Thasadith-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Bold"),
+    url("../fonts/Thasadith-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Bold Italic"),
+    url("../fonts/Thasadith-BoldItalic.woff") format("woff");
+}
+
+.squares {
+  overflow: hidden;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+.learning-activities-p1 {
+  padding: 4rem 10% 0 10%;
+  margin: 0 auto;
+}
+
+.italian-activities img {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  /* margin-top: 5%; */
+}
+
+.our-program-link,
+.contact-btn {
+  background-color: #efd780;
+  padding: 0.4rem 2rem;
+  font-family: "Thasadith Regular";
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact-botton {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.italian-immersion-images {
+  /* height: 50vh;  */
+
+  color: #000;
+  text-align: center;
+  padding: 3rem !important;
+  box-sizing: border-box;
+  display: flex;
+  background: #cedacc;
+}
+
+.italian-activities-inner {
+  width: 100%;
+  height: auto;
+}
+
+.magazine {
+  text-align: center;
+}
+
+.magazine_images img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.san_francisco_chronicle {
+  width: 50%;
+  display: block;
+}
+
+.vogue {
+  width: 20%;
+  display: block;
+}
+
+.bambini {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+  font-family: "Krona One Regular" !important;
+}
+
+.testimonials {
+  margin-top: 8rem;
+}
+
+.feedback {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  margin: 10% 10% 0 10%;
+  font-family: "Thasadith Regular";
+}
+
+.parents_testimonials {
+  background-color: #cedacc;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.about_us-link {
+  background-color: #efd780;
+  padding: 0.4rem 2rem;
+  font-family: "Thasadith Regular";
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.about_us_div {
+  margin: 0 auto;
+}
+
+/* Contact Buttons */
+.contact_button {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* .contact-btn {
+  background-color: #efd780;
+  padding: 0.6rem 2rem;
+  font-family: "Thasadith Regular";
+  font-size: 40px;
+  color: black;
+} */
+
+.siamo {
+  margin-top: 15rem !important;
+}
+
+/* Map */
+
+#location {
+  font-weight: 700;
+}
+
+.ending-p {
+  margin: 20rem auto;
+}
+
+/* Footer */
+footer p {
+  margin: 4rem;
+  font-family: "Thasadith Regular";
+  font-size: 1rem;
+  position: sticky;
+}

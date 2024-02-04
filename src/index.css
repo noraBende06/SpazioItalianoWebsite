@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Krona One Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/KronaOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Regular"),
+    url("./assets/fonts/Thasadith-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Italic"),
+    url("./assets/fonts/Thasadith-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Bold"),
+    url("./assets/fonts/Thasadith-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Thasadith Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Thasadith Bold Italic"),
+    url("./assets/fonts/Thasadith-BoldItalic.woff") format("woff");
+}
+h1 {
+  font-family: "Krona One Regular";
+}
+h2 {
+  font-family: "Thasadith Regular";
+}
+a {
+  font-family: "Thasadith Regular";
+}
+p {
+  font-family: "Thasadith Regular";
+}
+span {
+  font-family: "Thasadith Bold";
+}
+.modal-link {
+  font-family: "Krona One Regular";
+}
+.slider-container .slick-prev,
+.slider-container .slick-next {
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%; /* Circular shape */
+  width: 40px; /* Width of the arrows */
+  height: 40px; /* Height of the arrows */
+  display: flex; /* To center the arrow icon */
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container .slick-prev {
+  left: 10px;
+}
+
+.slider-container .slick-next {
+  right: 10px;
+}
+
+.slider-container .slick-prev:before,
+.slider-container .slick-next:before {
+  font-size: 40px; /* Size of the arrow icon */
+  color: white; /* Color of the arrow icon */
+  opacity: 1;
+}
+
+.slider-container .slick-dots li button:before {
+  font-size: 14px; /* Size of the dots */
+  color: #ffffff; /* Dot color */
+}
+
+.slider-container .slick-dots li.slick-active button:before {
+  color: #000000; /* Active dot color */
+}
